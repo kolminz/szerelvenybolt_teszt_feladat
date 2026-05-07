@@ -6,6 +6,7 @@ A termékek `JSON` fájlból érkeznek, a felületen kártyás nézetben jelenne
 ## Funkciók
 
 - Reszponzív termékrács
+- Termékek megjelenítése szolid animációval betöltéskor
 - Készlet állapot szerinti badge és gomb
 - A műveletek visszajelzése (toast üzenetben oldottam meg, mivel erre nem tért ki a feladat leírás)
 - Készleten lévő termékek exportja XML fájlba (`export.php`)
