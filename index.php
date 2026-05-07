@@ -11,7 +11,7 @@
       <header class="header">
         <h1>Fűtés és klíma ajánlatok</h1>
         <p class="subtitle">
-          Reszponzív termékkártyák dinamikus backend adatokkal.
+          Szerelvénybolt teszt feladat megoldása.
         </p>
       </header>
 
@@ -22,7 +22,7 @@
       </section>
 
       <section id="productGrid" class="grid" aria-live="polite"></section>
-      <p id="message" class="message"></p>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
     </main>
 
     <script src="script.js"></script>
