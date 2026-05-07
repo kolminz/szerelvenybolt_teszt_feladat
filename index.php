@@ -13,13 +13,10 @@
         <p class="subtitle">
           Szerelvénybolt teszt feladat megoldása.
         </p>
+		<button id="exportXmlBtn" class="export-btn" type="button">
+		  Készleten lévő termékek exportálása XML-be
+		</button>
       </header>
-
-      <section class="tools">
-        <button id="exportXmlBtn" class="export-btn" type="button">
-          Készleten lévő termékek exportálása XML-be
-        </button>
-      </section>
 
       <section id="productGrid" class="grid" aria-live="polite"></section>
       <div id="toast" class="toast" role="status" aria-live="polite"></div>

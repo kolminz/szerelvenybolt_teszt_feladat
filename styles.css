@@ -12,6 +12,7 @@
 	--shadow: 0 10px 30px #1830561A;
 	--content-width: 1280px;
 	--gap: 1rem;
+	--header-sticky-top: 0;
 }
 
 * {
@@ -33,6 +34,11 @@ body {
 
 .header {
 	margin-bottom: 1rem;
+	position: sticky;
+	top: var(--header-sticky-top);
+	z-index: 120;
+	background: linear-gradient(180deg, #f7f9ff 0%, var(--bg) 100%);
+	padding: 0.5rem 0 0.65rem;
 }
 
 h1 {
@@ -46,16 +52,13 @@ h1 {
 	font-size: 0.95rem;
 }
 
-.tools {
-	margin: 1rem 0 1.2rem;
-}
-
 .export-btn {
 	border: 0;
 	border-radius: 12px;
 	background: var(--secondary);
 	color: var(--text-secondary);
 	padding: 0.75rem 1rem;
+	margin-top: var(--gap);
 	font-weight: 600;
 	cursor: pointer;
 	transition: transform 0.2s ease, background-color 0.2s ease;
