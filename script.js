@@ -48,7 +48,13 @@ function renderProducts (products) {
               <span class="add-to-cart">Kosárba</span>
               <span class="added-to-cart">Kosárba helyezve</span>
             </button>`
-				: `<button class="action-btn notify" type="button">Értesítést kérek</button>`
+				: `<button class="notify-button action-btn" type="button">
+              <svg class="notify-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path class="notify-clapper" d="M9 21a3 3 0 0 0 6 0"></path>
+              </svg>
+              <span>Értesítést kérek</span>
+            </button>`
 		}
     `;
 
@@ -67,6 +73,13 @@ function renderProducts (products) {
 				setTimeout(() => {
 					button.classList.remove("added");
 				}, 2000);
+			});
+		} else {
+			button.addEventListener("click", () => {
+				button.classList.add("notify-sent");
+				setTimeout(() => {
+					button.classList.remove("notify-sent");
+				}, 700);
 			});
 		}
 
